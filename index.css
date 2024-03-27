@@ -36,8 +36,15 @@ body {
   width: 350px;
   background-color: rgb(194, 203, 155);
   margin: 10px;
+  display: flex;
+  flex-direction: row;
 
 }
 .pName {
     color: blueviolet;
+}
+.editEle{
+    height: 15px;
+    width: 30px;
+    background-color: red;
 }

@@ -20,8 +20,11 @@ formEle.addEventListener("submit", (e) => {
         pEle.classList.add('pName')
         const editEle = document.createElement('div')
         boxPerson.append(editEle)
+        editEle.classList.add('editEle')
         const pEDIT = document.createElement('p')
         pEDIT.textContent ='Edit'
+        editEle.append(pEDIT)
+
 
         
     }
