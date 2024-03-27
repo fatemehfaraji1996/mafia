@@ -1,0 +1,39 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: rgb(58, 51, 64);
+}
+.contaner {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: bisque; */
+  margin-top: 100px;
+  /* margin-left: auto; */
+  margin-left: 40%;
+}
+.input {
+  /* background-color: rgb(226, 248, 248); */
+  height: 40px;
+  width: 200px;
+  /* padding-right: 0px;
+  border-radius: 10px; */
+}
+.add {
+  height: 45px;
+  width: 50px;
+  /* margin-left: 0px; */
+  background-color: rgb(58, 51, 64);
+  border: solid green 2px;
+  border-radius: 10px;
+}
+.boxPerson {
+  height: 40px;
+  width: 350px;
+  background-color: rgb(194, 203, 155);
+  margin: 10px;
+}
