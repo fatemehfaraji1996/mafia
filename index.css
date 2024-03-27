@@ -38,14 +38,17 @@ body {
   margin: 10px;
   display: flex;
   flex-direction: row;
-
 }
 .pName {
-    color: blueviolet;
+  color: blueviolet;
 }
-.editEle{ 
-
-    height: 35px;
-    width: 50px;
-    background-color: red;
+.editEle {
+  height: 35px;
+  width: 50px;
+  background-color: red;
+}
+.deletEle {
+  height: 35px;
+  width: 40px;
+  background-color: rgb(159, 197, 55);
 }

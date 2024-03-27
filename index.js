@@ -26,9 +26,15 @@ formEle.addEventListener("submit", (e) => {
         const pEDIT = document.createElement('p')
         pEDIT.textContent ='Edit'
         editEle.append(pEDIT)
+        const deletEle = document.createElement('div')
+        boxPerson.append(editEle)
+        boxPerson.classList.add('deletEle')
+        const remove = document.createElement('p')
+        remove.textContent = '*'
         // edit section
         editEle.addEventListener('click',()=>{
             inputEle.value= pEle.textContent
+
         }) 
         // 
     }
