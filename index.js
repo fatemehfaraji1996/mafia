@@ -1,52 +1,22 @@
-const inputEle = document.querySelector(".input");
-const buttonAddEle = document.querySelector(".add");
-const cantanerEle = document.querySelector('.contaner')
-let count = 0
-const formEle = document.querySelector("form");
 
-formEle.addEventListener("submit", (e) => {
-    e.preventDefault()
-    const inputEle = document.querySelector(".input");
-    console.log(inputEle.value);
-    if (inputEle.value){
-        const boxPerson = document.createElement('div')
-        formEle.append(boxPerson)
-        boxPerson.classList.add('boxPerson')
-        const pEle = document.createElement('p')
-        pEle.textContent=inputEle.value
-        boxPerson.append(pEle)
-        count ++
-        if (count>5) {
-            alert('you cant cheose batter than 15')
-        }
-        pEle.classList.add('pName')
-        const editEle = document.createElement('div')
-        boxPerson.append(editEle)
-        editEle.classList.add('editEle')
-        const pEDIT = document.createElement('p')
-        pEDIT.textContent ='Edit'
-        editEle.append(pEDIT)
-        const deletEle = document.createElement('div')
-        boxPerson.append(editEle)
-        boxPerson.classList.add('deletEle')
-        const remove = document.createElement('p')
-        remove.textContent = '*'
-        // edit section
-        editEle.addEventListener('click',()=>{
-            inputEle.value= pEle.textContent
+/* <div class="input-group">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username with two button addons">
+  <button class="btn btn-outline-secondary" type="button">Button</button>
+  <button class="btn btn-outline-secondary" type="button">Button</button>
+</div> */
 
-        }) 
-        // 
-    }
-   
-    inputEle.value = ""
-    
+const form = document.querySelector('form')
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const inputEle = document.querySelector(".form-control");
+  const buttonAddEle = document.querySelector(".btn-outline-secondary");
+  const form = document.querySelector('form')
+  form.innerHTML += `<div class="input-group">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username with two button addons">
+  <button class="btn btn-outline-secondary" type="button">Edit</button>
+  <button class="btn btn-outline-secondary" type="button">Delet</button>
+</div>`
+  
+
 });
-
-function edit(element) {
-    element.addEventListener('click',()=>{
-        inputEle.value = inputEle.value
-    })
-}
-
 
