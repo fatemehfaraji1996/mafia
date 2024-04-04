@@ -8,12 +8,11 @@ const form = document.querySelector("form");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  // const inputEle = document.querySelector(".form-control");
-  // console.log(inputEle);delet
-  // const buttonAddEle = document.querySelector(".btn-outline-secondary");
-  // console.log(buttonAddEle); delet
+
   const form = document.querySelector("form");
+
   const inputPlayers = document.querySelector("#player");
+  console.log(inputPlayers);
   const butonSubmit = document.querySelector("#button-addon2");
   console.log(butonSubmit);
   // start
