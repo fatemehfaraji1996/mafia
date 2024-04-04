@@ -13,3 +13,10 @@
 .boxparent {
   width: 600px;
 }
+.btnbtnEdit {
+  background-color: aquamarine;
+
+}
+.btnbtnDelet {
+  background-color: rgb(252, 136, 132);
+}
