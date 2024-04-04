@@ -17,7 +17,11 @@ formEle.addEventListener("submit", (e) => {
         const pEle = document.createElement('p')
         pEle.textContent=inputEle.value
         boxPerson.append(pEle)
-        
+        const boxEdit = document.createElement('div')
+        boxPerson.append(boxEdit) 
+        const pEditEle = document.createElement('p')
+        boxEdit.append(pEditEle)
+        pEditEle.textContent= 'Edit'
     }
     
 });
