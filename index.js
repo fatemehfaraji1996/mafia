@@ -17,11 +17,19 @@ formEle.addEventListener("submit", (e) => {
         const pEle = document.createElement('p')
         pEle.textContent=inputEle.value
         boxPerson.append(pEle)
+        // start edit buttob
         const boxEdit = document.createElement('div')
         boxPerson.append(boxEdit) 
         const pEditEle = document.createElement('p')
         boxEdit.append(pEditEle)
         pEditEle.textContent= 'Edit'
+        // start  delet button
+        const boxDelet = document.createElement('div')
+        boxPerson.append(boxDelet) 
+        const  pboxDelet = document.createElement('p')
+        boxDelet.append(pboxDelet)
+        pboxDelet.textContent= 'Delet'
+
     }
     
 });
