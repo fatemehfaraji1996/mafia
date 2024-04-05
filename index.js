@@ -23,13 +23,14 @@ formEle.addEventListener("submit", (e) => {
         const pEditEle = document.createElement('p')
         boxEdit.append(pEditEle)
         pEditEle.textContent= 'Edit'
+        boxEdit.classList.add('divedit')
         // start  delet button
         const boxDelet = document.createElement('div')
         boxPerson.append(boxDelet) 
         const  pboxDelet = document.createElement('p')
         boxDelet.append(pboxDelet)
         pboxDelet.textContent= 'Delet'
-
+        boxDelet.classList.add('divdelet')
     }
     
 });
