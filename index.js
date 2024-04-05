@@ -17,13 +17,18 @@ formEle.addEventListener("submit", (e) => {
         const pEle = document.createElement('p')
         pEle.textContent=inputEle.value
         boxPerson.append(pEle)
-        // start edit buttob
+        // start edit button
         const boxEdit = document.createElement('div')
         boxPerson.append(boxEdit) 
         const pEditEle = document.createElement('p')
         boxEdit.append(pEditEle)
         pEditEle.textContent= 'Edit'
         boxEdit.classList.add('divedit')
+        console.log(boxEdit);
+        boxEdit.addEventListener('click',(e)=>{
+            inputEle.value =pEle.textContent
+
+        })
         // start  delet button
         const boxDelet = document.createElement('div')
         boxPerson.append(boxDelet) 
@@ -32,7 +37,8 @@ formEle.addEventListener("submit", (e) => {
         pboxDelet.textContent= 'Delet'
         boxDelet.classList.add('divdelet')
     }
-    
+    inputEle.value=''
+  
 });
 
 
