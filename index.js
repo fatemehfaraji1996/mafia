@@ -36,6 +36,9 @@ formEle.addEventListener("submit", (e) => {
         boxDelet.append(pboxDelet)
         pboxDelet.textContent= 'Delet'
         boxDelet.classList.add('divdelet')
+        boxDelet.addEventListener('click',(e)=>{
+            boxPerson.remove()
+        })
     }
     inputEle.value=''
   
