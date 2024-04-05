@@ -32,8 +32,20 @@ body {
   border-radius: 10px;
 }
 .boxPerson {
+  display: flex;
+  justify-content:space-between ;
   height: 40px;
   width: 350px;
   background-color: rgb(194, 203, 155);
   margin: 10px;
+}
+.divdelet{
+  width: 100px;
+  height: 40px;
+  background-color: red;
+}
+.divedit{
+  width: 100px;
+  height: 40px;
+  background-color: rgb(232, 103, 157);
 }
